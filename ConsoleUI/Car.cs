@@ -23,7 +23,7 @@ namespace ConsoleUI
 
         public override void DriveAbstract(Vehicle vehicle)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"I am driving my Car, it is a: {vehicle.Year} {vehicle.Make} {vehicle.Model}");
         }
     }
 }
