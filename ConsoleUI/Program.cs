@@ -23,7 +23,7 @@ namespace ConsoleUI
              * Vehicle shall have an abstract method called DriveAbstract with no implementation
              * Vehicle shall have a virtual method called DriveVirtual with a base implementation.
              */
-
+            
             /* 
              * Now create 2 non-abstract classes: Car and Motorcycle, that inherit from Vehicle
              * Add a distict property in the 2 derived classes such as HasTrunk for Car and HasSideCart for Motorcycle
@@ -32,19 +32,34 @@ namespace ConsoleUI
             */
 
             // Create a list of Vehicle called vehicles
-
+            var vehicle = new List<Vehicle>();
             /*
              * Create 4 instances: 1 Car, 1 Motorcycle, and then 2 instances of type Vehicle (use explicit typing) but use constuctors from derived classes
              * - new it up as one of each derived class
              * Set the properties with object initializer syntax
              */
+            var mustang = new Car(2012, "Ford", "Mustang");
+            vehicle.Add(mustang);
+            var hog = new Motorcycle();
+            vehicle.Add(hog);
+            Vehicle lambo = new Car(2022, "Lamborghini", "Aventador");
+            vehicle.Add(lambo);
+            Vehicle thing = new Car();
+            vehicle.Add(thing);
+
 
             /*
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate over each of the properties
              */
-
+            foreach(Vehicle v in vehicle)
+            {
+                v.DriveVirtual(v);
+            }
+            Console.WriteLine();
             // Call each of the drive methods for one car and one motorcycle
+            mustang.DriveVirtual(mustang);
+            hog.DriveAbstract(hog);
 
             #endregion            
             Console.ReadLine();
