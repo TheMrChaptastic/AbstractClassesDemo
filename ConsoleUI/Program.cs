@@ -40,7 +40,7 @@ namespace ConsoleUI
              */
             var mustang = new Car(2012, "Ford", "Mustang");
             vehicle.Add(mustang);
-            var hog = new Motorcycle();
+            var hog = new Motorcycle() { Make = "Yamaha", Year = 2021, Model = "FastBoy"};
             vehicle.Add(hog);
             Vehicle lambo = new Car(2022, "Lamborghini", "Aventador");
             vehicle.Add(lambo);
