@@ -20,7 +20,7 @@ namespace ConsoleUI
 
         public override void DriveAbstract(Vehicle vehicle)
         {
-            Console.WriteLine($"I am driving my Car, it is a: {vehicle.Year} {vehicle.Make} {vehicle.Model}");
+            Console.WriteLine($"The Car Peels Out (Abstract)");
         }
     }
 }

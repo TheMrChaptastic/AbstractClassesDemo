@@ -11,11 +11,11 @@ namespace ConsoleUI
 
         public override void DriveVirtual(Vehicle vehicle)
         {
-            Console.WriteLine($"I overwrote this for the Motercycle Class. Im riding a {vehicle.Make} {vehicle.Model}");
+            Console.WriteLine($"The Car Peels Out (Virtual Override)");
         }
         public override void DriveAbstract(Vehicle vehicle)
         {
-            Console.WriteLine($"I am driving my Motorcycle, it is a: {vehicle.Make} {vehicle.Model}");
+            Console.WriteLine($"The Motorcylce Peels Out (Abstract)");
         }
     }
 }
