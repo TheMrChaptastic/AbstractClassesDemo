@@ -6,18 +6,12 @@ namespace ConsoleUI
 {
     public class Motorcycle : Vehicle
     {
-        public Motorcycle()
-        {
-            Year = 2021;
-            Make = "Ducati";
-            Model = "Hypermotard";
-        }
 
         public bool HasSideCart { get; set; } = false;
 
         public override void DriveVirtual(Vehicle vehicle)
         {
-            Console.WriteLine($"I overwrote this for the {vehicle.Make} {vehicle.Model} object");
+            Console.WriteLine($"I overwrote this for the Motercycle Class. Im riding a {vehicle.Make} {vehicle.Model}");
         }
         public override void DriveAbstract(Vehicle vehicle)
         {

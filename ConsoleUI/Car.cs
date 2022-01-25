@@ -8,9 +8,6 @@ namespace ConsoleUI
     {
         public Car()
         {
-            Year = 2010;
-            Make = "Hyundai";
-            Model = "Elantra";
         }
         public Car(int y, string make, string model)
         {
