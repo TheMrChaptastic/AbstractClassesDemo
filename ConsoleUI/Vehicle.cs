@@ -13,7 +13,7 @@ namespace ConsoleUI
         public abstract void DriveAbstract(Vehicle vehicle);
         public virtual void DriveVirtual(Vehicle vehicle)
         {
-            Console.WriteLine($"I am driving my vehicle, it is a: {vehicle.Year} {vehicle.Make} {vehicle.Model}");
+            Console.WriteLine($"This is calling a virtual method, it is a: {vehicle.Year} {vehicle.Make} {vehicle.Model}");
         }
     }
 }

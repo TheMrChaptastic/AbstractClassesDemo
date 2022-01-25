@@ -15,6 +15,10 @@ namespace ConsoleUI
 
         public bool HasSideCart { get; set; } = false;
 
+        public override void DriveVirtual(Vehicle vehicle)
+        {
+            Console.WriteLine($"I overwrote this for the {vehicle.Make} {vehicle.Model} object");
+        }
         public override void DriveAbstract(Vehicle vehicle)
         {
             Console.WriteLine($"I am driving my Motorcycle, it is a: {vehicle.Make} {vehicle.Model}");
