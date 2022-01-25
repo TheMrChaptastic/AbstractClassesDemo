@@ -58,10 +58,10 @@ namespace ConsoleUI
             }
             Console.WriteLine();
             // Call each of the drive methods for one car and one motorcycle
-            mustang.DriveAbstract(mustang);
-            mustang.DriveVirtual(mustang);
-            hog.DriveAbstract(hog);
-            hog.DriveVirtual(hog);
+            mustang.DriveAbstract();
+            mustang.DriveVirtual();
+            hog.DriveAbstract();
+            hog.DriveVirtual();
 
             #endregion            
             Console.ReadLine();

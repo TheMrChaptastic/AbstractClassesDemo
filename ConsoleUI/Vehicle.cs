@@ -10,8 +10,8 @@ namespace ConsoleUI
         public string Make { get; set; } = "Unidentified";
         public string Model { get; set; } = "Vehicle";
 
-        public abstract void DriveAbstract(Vehicle vehicle);
-        public virtual void DriveVirtual(Vehicle vehicle)
+        public abstract void DriveAbstract();
+        public virtual void DriveVirtual()
         {
             Console.WriteLine($"The Vehicle Peels Out (Virtual)");
         }

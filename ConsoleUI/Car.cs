@@ -18,7 +18,7 @@ namespace ConsoleUI
 
         public bool HasTrunk { get; set; } = true;
 
-        public override void DriveAbstract(Vehicle vehicle)
+        public override void DriveAbstract()
         {
             Console.WriteLine($"The Car Peels Out (Abstract)");
         }
